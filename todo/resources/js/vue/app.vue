@@ -32,12 +32,13 @@ export default {
             .catch( error => {
                 console.log( error);
                 })
-        },
+        }
         
-        created(){
+        
+       },
+       created(){
             this.getList();
             }
-       }
    }
     
 </script>

@@ -1,6 +1,6 @@
-<template lang="">
+<template>
     <div>
-        <div v-for="(item,index) in items" :key="index">
+        <div v-for="(item, index) in items" :key="index">
             <list-todo
                 :item="item"
                 class="item"
@@ -10,9 +10,10 @@
     </div>
 </template>
 <script>
-import listTodo from './listTodo.vue'
+import listTodo from './listTodo'
+import ListTodo from './listTodo.vue'
 export default {
-    props: ['item'],
+    props: ['items'],
     components: {
         listTodo
 }

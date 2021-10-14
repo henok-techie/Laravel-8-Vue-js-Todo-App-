@@ -32,7 +32,7 @@ export default {
             axios.delete('api/item/'+ this.item.id )
             .then( response => {
                 if (response.status == 200){
-                    this.$emit('itemChanged');
+                    this.$emit('itemchanged');
                     }
                 })
             .catch ( error => {
